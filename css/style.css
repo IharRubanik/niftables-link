@@ -1,0 +1,193 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background: #0b0b0c;
+}
+
+body .wrapper {
+  width: 100%;
+  background-image: url(../img/background.svg);
+  padding: 2.083vw;
+  height: 100vh;
+}
+
+body .wrapper .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0.781vw;
+}
+
+body .wrapper .logo img {
+  width: 2.135vw;
+}
+
+body .wrapper .logo span {
+  font-family: "AGPM";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.042vw;
+  line-height: 1.302vw;
+  color: #ffffff;
+}
+
+body .wrapper .container {
+  width: 72.917vw;
+  margin: 0 auto;
+}
+
+body .wrapper .container .title-container {
+  position: relative;
+  margin: 3.542vw 0 0 0;
+  width: 68.75vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body .wrapper .container .title-container .title {
+  font-family: "AGPB";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 5.313vw;
+  line-height: 5.833vw;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+body .wrapper .container .title-container .description {
+  padding: 1.771vw 1.771vw 0 0;
+}
+
+body .wrapper .container .title-container .description span {
+  font-family: "AGPM";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.25vw;
+  line-height: 1.771vw;
+  text-transform: uppercase;
+  background: radial-gradient(60.45% 76.17% at -5.8% 40.18%, #16a9fe 0%, rgba(22, 169, 254, 0) 100%), radial-gradient(101.15% 101.15% at 50% 101.15%, #0342e7 0%, #cb24ff 53.65%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  -webkit-text-emphasis-color: transparent;
+          text-emphasis-color: transparent;
+}
+
+body .wrapper .container .title-container .description span::after {
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: block;
+  content: "";
+  width: 1.771vw;
+  height: 1.771vw;
+  border-right: 0.052vw solid #ffffff;
+  border-top: 0.052vw solid #ffffff;
+}
+
+body .wrapper .container .social {
+  margin: 7.292vw 0 0 0;
+  padding: 0 0 0 5.417vw;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto auto;
+      grid-template-columns: auto auto auto;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  gap: 1.042vw;
+}
+
+body .wrapper .container .social .social__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0.677vw;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 9.115vw;
+  height: 3.229vw;
+  background-image: url(../img/backgroung-button.svg);
+  background-position: center;
+  background-size: cover;
+}
+
+body .wrapper .container .social .social__link:nth-child(1) {
+  width: 9.167vw;
+}
+
+body .wrapper .container .social .social__link:nth-child(2) {
+  width: 8.698vw;
+  margin-left: -3.15vw;
+}
+
+body .wrapper .container .social .social__link:nth-child(3) {
+  width: 8.906vw;
+  margin-left: -12.6vw;
+}
+
+body .wrapper .container .social .social__link:nth-child(4) {
+  width: 12.292vw;
+}
+
+body .wrapper .container .social .social__link:nth-child(5) {
+  width: 18.177vw;
+}
+
+body .wrapper .container .social .social__link:nth-child(6) {
+  width: 10.156vw;
+}
+
+body .wrapper .container .social .social__link:nth-child(7) {
+  width: 9.219vw;
+}
+
+body .wrapper .container .social .social__link:nth-child(8) {
+  width: 10.938vw;
+  margin-left: -3.065vw;
+}
+
+body .wrapper .container .social .social__link:nth-child(9) {
+  width: 9.375vw;
+  margin-left: -10.26vw;
+}
+
+body .wrapper .container .social .social__link:hover {
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  cursor: pointer;
+  background: #0342e7;
+}
+
+body .wrapper .container .social .social__link:hover svg {
+  fill: #ffffff;
+}
+
+body .wrapper .container .social .social__link svg {
+  width: 1.146vw;
+  fill: #4e5465;
+}
+
+body .wrapper .container .social .social__link span {
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.146vw;
+  line-height: 1.354vw;
+  color: #ffffff;
+}
+/*# sourceMappingURL=style.css.map */

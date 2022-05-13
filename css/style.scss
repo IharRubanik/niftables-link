@@ -1,0 +1,158 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background: #0b0b0c;
+  .wrapper {
+    width: 100%;
+    background-image: url(../img/background.svg);
+    padding: 2.083vw;
+    height: 100vh;
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 0.781vw;
+      img {
+        width: 2.135vw;
+      }
+      span {
+        font-family: "AGPM";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 1.042vw;
+        line-height: 1.302vw;
+        color: #ffffff;
+      }
+    }
+    .container {
+      width: 72.917vw;
+      margin: 0 auto;
+      .title-container {
+        position: relative;
+        margin: 3.542vw 0 0 0;
+        width: 68.75vw;
+        display: flex;
+        justify-content: space-between;
+        .title {
+          font-family: "AGPB";
+          font-style: normal;
+          font-weight: 700;
+          font-size: 5.313vw;
+          line-height: 5.833vw;
+          text-transform: uppercase;
+          color: #ffffff;
+        }
+        .description {
+          padding: 1.771vw 1.771vw 0 0;
+          span {
+            font-family: "AGPM";
+            font-style: normal;
+            font-weight: 500;
+            font-size: 1.25vw;
+            line-height: 1.771vw;
+            text-transform: uppercase;
+            background: radial-gradient(
+                60.45% 76.17% at -5.8% 40.18%,
+                #16a9fe 0%,
+                rgba(22, 169, 254, 0) 100%
+              ),
+              radial-gradient(
+                101.15% 101.15% at 50% 101.15%,
+                #0342e7 0%,
+                #cb24ff 53.65%
+              );
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-emphasis-color: transparent;
+            &::after {
+              position: absolute;
+              right: 0;
+              top: 0;
+              display: block;
+              content: "";
+              width: 1.771vw;
+              height: 1.771vw;
+              // background-color: #cb24ff;
+              border-right: 0.052vw solid #ffffff;
+              border-top: 0.052vw solid #ffffff;
+            }
+          }
+        }
+      }
+      .social {
+        margin: 7.292vw 0 0 0;
+        padding: 0 0 0 5.417vw;
+        display: grid;
+        grid-template-columns: auto auto auto;
+        justify-content: start;
+        gap: 1.042vw;
+
+        .social__link {
+          &:nth-child(1) {
+            width: 9.167vw;
+          }
+          &:nth-child(2) {
+            width: 8.698vw;
+            margin-left: -3.15vw;
+          }
+          &:nth-child(3) {
+            width: 8.906vw;
+            margin-left: -12.6vw;
+          }
+          &:nth-child(4) {
+            width: 12.292vw;
+          }
+          &:nth-child(5) {
+            width: 18.177vw;
+          }
+          &:nth-child(6) {
+            width: 10.156vw;
+          }
+          &:nth-child(7) {
+            width: 9.219vw;
+           
+          }
+          &:nth-child(8) {
+            width: 10.938vw;
+            margin-left: -3.065vw;
+          }
+          &:nth-child(9) {
+            width: 9.375vw;
+            margin-left: -10.26vw;
+          }
+          display: flex;
+          align-items: center;
+          gap: 0.677vw;
+          justify-content: center;
+          width: 9.115vw;
+          height: 3.229vw;
+          background-image: url(../img/backgroung-button.svg);
+          background-position: center;
+          background-size:cover;
+          
+          &:hover {
+            transition: 0.2s;
+            cursor: pointer;
+            background: #0342e7;
+            svg {
+              fill: #ffffff;
+            }
+          }
+          svg {
+            width: 1.146vw;
+            fill: #4e5465;
+          }
+          span {
+            font-family: "Barlow";
+            font-style: normal;
+            font-weight: 500;
+            font-size: 1.146vw;
+            line-height: 1.354vw;
+            color: #ffffff;
+          }
+        }
+      }
+    }
+  }
+}
