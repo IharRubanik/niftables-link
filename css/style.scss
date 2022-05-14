@@ -8,7 +8,7 @@ a:active {
 body {
   background: #0b0b0c;
   background-position: bottom 0 right 0;
-    background-size: 100%;
+  background-size: 100%;
   background-repeat: no-repeat;
   background-image: url(../img/background.webp);
   .wrapper {
@@ -64,16 +64,18 @@ body {
             font-size: 1.25vw;
             line-height: 1.771vw;
             text-transform: uppercase;
-            background: radial-gradient(
-                60.45% 76.17% at -5.8% 40.18%,
-                #16a9fe 0%,
-                rgba(22, 169, 254, 0) 100%
-              ),
-              radial-gradient(
-                101.15% 101.15% at 50% 101.15%,
-                #0342e7 0%,
-                #cb24ff 53.65%
-              );
+            background: radial-gradient( 60.45% 76.17% at -5.8% 40.18%, #16a9fe 0, rgba(22, 169, 254, 0) 100% ), radial-gradient(101.15% 101.15% at 50% 101.15%, #0342e7 0, #cb24ff 53.65%) #fff;
+
+            // background: radial-gradient(
+            //     60.78% 110.37% at -5.8% 40.18%,
+            //     #16a9fe 0%,
+            //     rgba(22, 169, 254, 0) 100%
+            //   ),
+            //   radial-gradient(
+            //     90.85% 462.77% at 30.89% 73.53%,
+            //     #0342e7 0%,
+            //     #cb24ff 59.16%
+            //   );
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
@@ -107,7 +109,7 @@ body {
           height: 3.229vw;
           background-image: url(../img/backgroung-button.svg);
           background-position: center;
-          background-size: cover;
+          background-size: auto;
           &:hover {
             transition: 0.2s;
             cursor: pointer;
@@ -130,6 +132,7 @@ body {
             font-size: 1.146vw;
             line-height: 1.354vw;
             color: #ffffff;
+            transform: translateY(-5%);
           }
         }
         .website {
@@ -170,18 +173,17 @@ body {
   }
 }
 
-@media (min-aspect-ratio: 1920/970) and (min-width: 1025px) {
-  body{
-    .wrapper{
-      height: auto;
+@media (min-aspect-ratio: 1920/866) and (min-width: 1025px) {
+  body {
+    .wrapper {
+      height: 100%;
     }
   }
 }
 
-
 @media (min-aspect-ratio: 1024/768) and (max-width: 1024px) {
-  body{
-    .wrapper{
+  body {
+    .wrapper {
       height: auto;
     }
   }
@@ -297,6 +299,9 @@ body {
           .title {
             font-size: 62px;
             line-height: 72px;
+          }
+          .description{
+            transform: translateY(3px);
           }
         }
       }
