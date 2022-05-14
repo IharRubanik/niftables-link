@@ -1,13 +1,26 @@
 * {
   box-sizing: border-box;
+  text-decoration: none;
+}
+a:active {
+  outline: none;
 }
 body {
   background: #0b0b0c;
+  background-position: bottom;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-image: url(../img/background.webp);
   .wrapper {
     width: 100%;
-    background-image: url(../img/background.svg);
-    padding: 2.083vw;
+    padding: 2.083vw 2.083vw 7vw 2.083vw;
     height: 100vh;
+    background-image: url(../img/noise.svg);
+    background-size: 100%;
+    .images {
+      position: absolute;
+      width: 100%;
+    }
     .logo {
       display: flex;
       align-items: center;
@@ -73,7 +86,6 @@ body {
               content: "";
               width: 1.771vw;
               height: 1.771vw;
-              // background-color: #cb24ff;
               border-right: 0.052vw solid #ffffff;
               border-top: 0.052vw solid #ffffff;
             }
@@ -87,50 +99,15 @@ body {
         grid-template-columns: auto auto auto;
         justify-content: start;
         gap: 1.042vw;
-
         .social__link {
-          &:nth-child(1) {
-            width: 9.167vw;
-          }
-          &:nth-child(2) {
-            width: 8.698vw;
-            margin-left: -3.15vw;
-          }
-          &:nth-child(3) {
-            width: 8.906vw;
-            margin-left: -12.6vw;
-          }
-          &:nth-child(4) {
-            width: 12.292vw;
-          }
-          &:nth-child(5) {
-            width: 18.177vw;
-          }
-          &:nth-child(6) {
-            width: 10.156vw;
-          }
-          &:nth-child(7) {
-            width: 9.219vw;
-           
-          }
-          &:nth-child(8) {
-            width: 10.938vw;
-            margin-left: -3.065vw;
-          }
-          &:nth-child(9) {
-            width: 9.375vw;
-            margin-left: -10.26vw;
-          }
           display: flex;
           align-items: center;
           gap: 0.677vw;
           justify-content: center;
-          width: 9.115vw;
           height: 3.229vw;
           background-image: url(../img/backgroung-button.svg);
           background-position: center;
-          background-size:cover;
-          
+          background-size: cover;
           &:hover {
             transition: 0.2s;
             cursor: pointer;
@@ -138,10 +115,13 @@ body {
             svg {
               fill: #ffffff;
             }
+            .website__icon {
+              fill: none;
+              stroke: #ffffff;
+            }
           }
           svg {
             width: 1.146vw;
-            fill: #4e5465;
           }
           span {
             font-family: "Barlow";
@@ -150,6 +130,256 @@ body {
             font-size: 1.146vw;
             line-height: 1.354vw;
             color: #ffffff;
+          }
+        }
+        .website {
+          width: 9.167vw;
+          stroke: #4e5465;
+          fill: none;
+        }
+        .twitter {
+          width: 8.698vw;
+          margin-left: -3.15vw;
+        }
+        .discord {
+          width: 8.906vw;
+          margin-left: -12.6vw;
+        }
+        .telegram-chat {
+          width: 12.292vw;
+        }
+        .telegram {
+          width: 18.177vw;
+        }
+        .instagram {
+          width: 10.156vw;
+        }
+        .youtube {
+          width: 9.219vw;
+        }
+        .whitepaper {
+          width: 10.938vw;
+          margin-left: -3.065vw;
+        }
+        .linkedin {
+          width: 9.375vw;
+          margin-left: -10.26vw;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  body {
+    background-position: bottom -12px right -57px;
+    background-size: 137%;
+    .wrapper {
+      padding: 30px;
+      .logo {
+        gap: 15px;
+        img {
+          width: 41px;
+        }
+        span {
+          font-size: 20px;
+          line-height: 25px;
+        }
+      }
+      .container {
+        width: 100%;
+        .title-container {
+          margin: 55px 0 0 0;
+          width: 100%;
+          gap: 50px;
+          .title {
+            font-size: 68px;
+            line-height: 78px;
+          }
+          .description {
+            padding: 24px 24px 0 0;
+            transform: translateY(-10px);
+            span {
+              font-size: 18px;
+              line-height: 28px;
+              &::after {
+                width: 20.5px;
+                height: 20.5px;
+                border-right: 1px solid #ffffff;
+                border-top: 1px solid #ffffff;
+              }
+            }
+          }
+        }
+        .social {
+          margin: 52px 0 0 0;
+          grid-template-columns: auto auto;
+          gap: 17px;
+          padding: 0;
+          .social__link {
+            gap: 11px;
+            height: 52px;
+
+            svg {
+              width: 18.5px;
+            }
+            span {
+              font-size: 18.4956px;
+              line-height: 22px;
+            }
+          }
+          .website {
+            width: 148px;
+          }
+          .twitter {
+            width: 140px;
+            margin-left: 0;
+            transform: translateX(-103%);
+          }
+          .discord {
+            width: 144px;
+            margin-left: 0;
+          }
+          .telegram-chat {
+            width: 198px;
+            transform: translateX(-75%);
+          }
+          .telegram {
+            width: 293px;
+          }
+          .instagram {
+            width: 164px;
+          }
+          .youtube {
+            width: 149px;
+          }
+          .whitepaper {
+            width: 177px;
+            margin-left: 0;
+            transform: translateX(-81%);
+          }
+          .linkedin {
+            width: 151px;
+            margin-left: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    background-position: bottom -35px right -57px;
+    background-size: 186%;
+    .wrapper {
+      padding: 30px;
+      .container {
+        .title-container {
+          gap: 50px;
+          .title {
+            font-size: 62px;
+            line-height: 72px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  body {
+    background-image: url(../img/background-mobile.webp);
+    background-position: top 0px right 0px;
+    background-size: 100%;
+    .wrapper {
+      padding: 20px 15px 60px;
+      height: auto;
+      .logo {
+        img {
+          width: 37px;
+        }
+        span {
+          font-size: 18px;
+          line-height: 23px;
+        }
+      }
+      .container {
+        width: 100%;
+        .title-container {
+          flex-direction: column;
+          margin: 119px 0 0 0;
+          width: 100%;
+          gap: 0px;
+          .title {
+            font-size: 36px;
+            line-height: 46px;
+          }
+          .description {
+            padding: 17px 17px 0 0;
+            transform: translateY(0);
+            max-width: 353px;
+            span {
+              font-size: 16px;
+              line-height: 26px;
+              &::after {
+                top: auto;
+                bottom: 0;
+                width: 18.5px;
+                height: 18.5px;
+                border-top: none;
+                border-bottom: 1px solid #ffffff;
+              }
+            }
+          }
+        }
+        .social {
+          margin: 40px 0 0 0;
+          grid-template-columns: 100%;
+          gap: 15px;
+
+          .social__link {
+            padding: 0 0 0 15px;
+            justify-content: flex-start;
+            gap: 18px;
+
+            svg {
+              width: 18.5px;
+            }
+            span {
+              font-size: 18.4956px;
+              line-height: 22px;
+            }
+          }
+          .website {
+            width: 100%;
+          }
+          .twitter {
+            width: 100%;
+            transform: translateX(-0);
+          }
+          .discord {
+            width: 100%;
+          }
+          .telegram-chat {
+            width: 100%;
+            transform: translateX(0);
+          }
+          .telegram {
+            width: 100%;
+          }
+          .instagram {
+            width: 100%;
+          }
+          .youtube {
+            width: 100%;
+          }
+          .whitepaper {
+            width: 100%;
+            transform: translateX(0);
+          }
+          .linkedin {
+            width: 100%;
           }
         }
       }
