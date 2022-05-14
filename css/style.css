@@ -44,6 +44,8 @@ body .wrapper .logo img {
 }
 
 body .wrapper .logo span {
+  -webkit-transform: translateY(7%);
+          transform: translateY(7%);
   font-family: "AGPM";
   font-style: normal;
   font-weight: 500;
@@ -91,7 +93,7 @@ body .wrapper .container .title-container .description span {
   font-size: 1.25vw;
   line-height: 1.771vw;
   text-transform: uppercase;
-  background: radial-gradient(50.1% 194.12% at 0% 0%, #16A9FE 0%, rgba(22, 169, 254, 0) 100%), radial-gradient(43.79% 213.24% at 35.23% 88.24%, #0342E7 0%, #CB24FF 100%);
+  background: radial-gradient(50.1% 194.12% at 0% 0%, #16a9fe 0%, rgba(22, 169, 254, 0) 100%), radial-gradient(43.79% 213.24% at 35.23% 88.24%, #0342e7 0%, #cb24ff 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -124,13 +126,7 @@ body .wrapper .container .social {
   gap: 1.042vw;
 }
 
-body .wrapper .container .social a {
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-}
-
-body .wrapper .container .social a .social__link {
+body .wrapper .container .social .social__link {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -145,29 +141,39 @@ body .wrapper .container .social a .social__link {
   background-image: url(../img/backgroung-button.svg);
   background-position: center;
   background-size: auto;
+  position: relative;
 }
 
-body .wrapper .container .social a .social__link:hover {
+body .wrapper .container .social .social__link a {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+body .wrapper .container .social .social__link:hover {
   -webkit-transition: 0.2s;
   transition: 0.2s;
   cursor: pointer;
   background: #0342e7;
 }
 
-body .wrapper .container .social a .social__link:hover svg {
+body .wrapper .container .social .social__link:hover svg {
   fill: #ffffff;
 }
 
-body .wrapper .container .social a .social__link:hover .website__icon {
+body .wrapper .container .social .social__link:hover .website__icon {
   fill: none;
   stroke: #ffffff;
 }
 
-body .wrapper .container .social a .social__link svg {
+body .wrapper .container .social .social__link svg {
   width: 1.146vw;
+  -webkit-transform: translateY(-2%);
+          transform: translateY(-2%);
 }
 
-body .wrapper .container .social a .social__link span {
+body .wrapper .container .social .social__link span {
   font-family: "Barlow";
   font-style: normal;
   font-weight: 500;
@@ -284,54 +290,51 @@ body .wrapper .container .social .linkedin {
     gap: 17px;
     padding: 0;
   }
-  body .wrapper .container .social a {
-    width: auto;
-  }
-  body .wrapper .container .social a .social__link {
+  body .wrapper .container .social .social__link {
     gap: 11px;
     height: 52px;
   }
-  body .wrapper .container .social a .social__link svg {
+  body .wrapper .container .social .social__link svg {
     width: 18.5px;
   }
-  body .wrapper .container .social a .social__link span {
+  body .wrapper .container .social .social__link span {
     font-size: 18.4956px;
     line-height: 22px;
   }
-  body .wrapper .container .social a .website {
+  body .wrapper .container .social .website {
     width: 148px;
   }
-  body .wrapper .container .social a .twitter {
+  body .wrapper .container .social .twitter {
     width: 140px;
     margin-left: 0;
     -webkit-transform: translateX(-103%);
             transform: translateX(-103%);
   }
-  body .wrapper .container .social a .discord {
+  body .wrapper .container .social .discord {
     width: 144px;
     margin-left: 0;
   }
-  body .wrapper .container .social a .telegram-chat {
+  body .wrapper .container .social .telegram-chat {
     width: 198px;
     -webkit-transform: translateX(-75%);
             transform: translateX(-75%);
   }
-  body .wrapper .container .social a .telegram {
+  body .wrapper .container .social .telegram {
     width: 293px;
   }
-  body .wrapper .container .social a .instagram {
+  body .wrapper .container .social .instagram {
     width: 164px;
   }
-  body .wrapper .container .social a .youtube {
+  body .wrapper .container .social .youtube {
     width: 149px;
   }
-  body .wrapper .container .social a .whitepaper {
+  body .wrapper .container .social .whitepaper {
     width: 177px;
     margin-left: 0;
     -webkit-transform: translateX(-81%);
             transform: translateX(-81%);
   }
-  body .wrapper .container .social a .linkedin {
+  body .wrapper .container .social .linkedin {
     width: 151px;
     margin-left: 0;
   }

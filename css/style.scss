@@ -29,6 +29,7 @@ body {
         width: 2.135vw;
       }
       span {
+        transform: translateY(7%);
         font-family: "AGPM";
         font-style: normal;
         font-weight: 500;
@@ -66,8 +67,16 @@ body {
             line-height: 1.771vw;
             text-transform: uppercase;
 
-            background: radial-gradient(50.1% 194.12% at 0% 0%, #16A9FE 0%, rgba(22, 169, 254, 0) 100%), radial-gradient(43.79% 213.24% at 35.23% 88.24%, #0342E7 0%, #CB24FF 100%);
-
+            background: radial-gradient(
+                50.1% 194.12% at 0% 0%,
+                #16a9fe 0%,
+                rgba(22, 169, 254, 0) 100%
+              ),
+              radial-gradient(
+                43.79% 213.24% at 35.23% 88.24%,
+                #0342e7 0%,
+                #cb24ff 100%
+              );
 
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
@@ -94,44 +103,50 @@ body {
         grid-template-columns: auto auto auto;
         justify-content: start;
         gap: 1.042vw;
-        a {
-          width: fit-content;
-          .social__link {
-            display: flex;
-            align-items: center;
-            gap: 0.677vw;
-            justify-content: center;
-            height: 3.229vw;
-            background-image: url(../img/backgroung-button.svg);
-            background-position: center;
-            background-size: auto;
-            &:hover {
-              transition: 0.2s;
-              cursor: pointer;
-              background: #0342e7;
-              svg {
-                fill: #ffffff;
-              }
-              .website__icon {
-                fill: none;
-                stroke: #ffffff;
-              }
-            }
+      
+        .social__link {
+          display: flex;
+          align-items: center;
+          gap: 0.677vw;
+          justify-content: center;
+          height: 3.229vw;
+          background-image: url(../img/backgroung-button.svg);
+          background-position: center;
+          background-size: auto;
+          position: relative;
+          a {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+          }
+          &:hover {
+            transition: 0.2s;
+            cursor: pointer;
+            background: #0342e7;
             svg {
-              width: 1.146vw;
-              transform: translateY(-2%);
+              fill: #ffffff;
             }
-            span {
-              font-family: "Barlow";
-              font-style: normal;
-              font-weight: 500;
-              font-size: 1.146vw;
-              line-height: 1.354vw;
-              color: #ffffff;
-              transform: translateY(-5%);
+            .website__icon {
+              fill: none;
+              stroke: #ffffff;
             }
           }
+          svg {
+            width: 1.146vw;
+            transform: translateY(-2%);
+          }
+          span {
+            font-family: "Barlow";
+            font-style: normal;
+            font-weight: 500;
+            font-size: 1.146vw;
+            line-height: 1.354vw;
+            color: #ffffff;
+            transform: translateY(-5%);
+          }
         }
+
         .website {
           width: 9.167vw;
           stroke: #4e5465;
@@ -232,21 +247,19 @@ body {
           grid-template-columns: auto auto;
           gap: 17px;
           padding: 0;
-          a {
-            width:auto;
-            .social__link {
-              gap: 11px;
-              height: 52px;
 
-              svg {
-                width: 18.5px;
-              }
-              span {
-                font-size: 18.4956px;
-                line-height: 22px;
-              }
+          .social__link {
+            gap: 11px;
+            height: 52px;
+
+            svg {
+              width: 18.5px;
             }
-         
+            span {
+              font-size: 18.4956px;
+              line-height: 22px;
+            }
+          }
 
           .website {
             width: 148px;
@@ -255,7 +268,6 @@ body {
             width: 140px;
             margin-left: 0;
             transform: translateX(-103%);
-     
           }
           .discord {
             width: 144px;
@@ -283,7 +295,6 @@ body {
             width: 151px;
             margin-left: 0;
           }
-        }
         }
       }
     }
