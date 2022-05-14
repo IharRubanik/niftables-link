@@ -16,7 +16,6 @@ body {
     padding: 2.083vw 2.083vw 7vw 2.083vw;
     height: 100vh;
     background-image: url(../img/noise.svg);
-    background-size: 100%;
     .images {
       position: absolute;
       width: 100%;
@@ -114,7 +113,7 @@ body {
       
 
           background-image: url(../img/backgroung-button.svg);
-          background-size: cover 100%;
+
           position: relative;
           a {
             position: absolute;

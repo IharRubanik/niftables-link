@@ -21,7 +21,6 @@ body .wrapper {
   padding: 2.083vw 2.083vw 7vw 2.083vw;
   height: 100vh;
   background-image: url(../img/noise.svg);
-  background-size: 100%;
 }
 
 body .wrapper .images {
@@ -139,7 +138,6 @@ body .wrapper .container .social .social__link {
           justify-content: center;
   height: 3.229vw;
   background-image: url(../img/backgroung-button.svg);
-  background-size: cover 100%;
   position: relative;
 }
 
