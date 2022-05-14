@@ -211,6 +211,18 @@ body .wrapper .container .social .linkedin {
   margin-left: -10.26vw;
 }
 
+@media (min-aspect-ratio: 1920 / 970) and (min-width: 1025px) {
+  body .wrapper {
+    height: auto;
+  }
+}
+
+@media (min-aspect-ratio: 1024 / 768) and (max-width: 1024px) {
+  body .wrapper {
+    height: auto;
+  }
+}
+
 @media (max-width: 1024px) {
   body {
     background-position: bottom -12px right -57px;
