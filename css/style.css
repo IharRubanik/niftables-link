@@ -232,7 +232,7 @@ body .wrapper .container .social .linkedin {
   }
 }
 
-@media (min-aspect-ratio: 1024 / 768) and (max-width: 1024px) {
+@media (min-aspect-ratio: 1024 / 682) and (max-width: 1024px) {
   body .wrapper {
     height: auto;
   }
