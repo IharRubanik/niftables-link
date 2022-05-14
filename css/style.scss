@@ -113,7 +113,9 @@ body {
 
       
 
-          background-image: url(../img/backgroung-button.svg);
+          background-image: url(../img/background-button.png);
+          background-size: cover;
+          background-position:center;
           position: relative;
           a {
             position: absolute;

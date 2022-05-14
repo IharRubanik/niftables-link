@@ -138,7 +138,9 @@ body .wrapper .container .social .social__link {
       -ms-flex-pack: center;
           justify-content: center;
   height: 3.229vw;
-  background-image: url(../img/backgroung-button.svg);
+  background-image: url(../img/background-button.png);
+  background-size: cover;
+  background-position: center;
   position: relative;
 }
 
